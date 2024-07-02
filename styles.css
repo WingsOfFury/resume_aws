@@ -1,0 +1,153 @@
+/* Base reset for padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Container for centering the content */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header image and name styling */
+.headshot {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border: 2px solid white;
+  padding: 5px;
+  box-shadow: grey 5px 5px 5px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Contact information styling */
+#contactInfo {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 15px;
+}
+
+/* Section styling for employment, education, and skills */
+section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact email farbe angepasst*/
+.contact {
+  text-decoration: none;
+  color: white;
+}
+
+.contact:hover {
+  color: rgb(234, 19, 16);
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* Timeline styling */
+#timeline .entry {
+  border-left: 3px solid #333;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#timeline .entry-header {
+  background: #e2e2e2;
+  padding: 10px;
+  margin-left: -3px;
+}
+
+#timeline .entry-header:hover {
+  background: #ccc;
+  color: #333;
+}
+
+/* Style for the job description content */
+#timeline .entry-content p {
+  padding: 5px 10px;
+  background: #f9f9f9;
+  border-left: 3px solid #333;
+  display: block;
+}
+
+/* List styling for education and skills */
+section ul {
+  list-style: inside square;
+  padding: 0 20px;
+}
+
+section ul li {
+  padding: 2px 0;
+}
+
+/* Adjustments for active class */
+.entry.active .entry-header {
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+.entry.active .entry-content {
+  display: block;
+}
+
+/* Visual cue for clickable items */
+.entry .entry-header:after {
+  content: " (Klicke zum Öffnen)";
+  font-size: 0.8em;
+  color: #666;
+}
+
+.entry.active .entry-header:after {
+  content: " (Zum Verkleinern klicken)";
+  font-size: 0.8em;
+  color: #666;
+}
+
+.counter {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 50%;
+  margin: 20px auto;
+}
+
+#count {
+  color: rgb(234, 19, 16);
+  font-weight: bold;
+}
