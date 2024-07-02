@@ -62,6 +62,14 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+section li a {
+  color: #000000;
+}
+
+section li a:hover {
+  color: rgb(234, 19, 16);
+}
+
 /* Contact email farbe angepasst*/
 .contact {
   text-decoration: none;
